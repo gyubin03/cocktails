@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Silver";
+    src: url(/fonts/Silver.ttf);
+}
+*{
+    font-family: "Silver";
+    text-decoration: none;
+    color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#background {
+    background-image: url('/img/background/Main_background.png');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+}
+#Main_img{
+    animation: blink 0.5s 3;
+    animation-delay: 2s;
+    position: absolute;
+    width: 100%;
+}
+@keyframes blink {
+    0%, 20%, 40%,  80%, 100% {
+        opacity: 1;
+    }
+    10%, 50%, 70%, 90% {
+        opacity: 0;
+    }
+}
+#container {
+    width: 755px;
+    height: 425px;
+    margin-top: 100px;
+    position: relative;
+}
+#container img{
+    position: absolute;
+    left: 55%;
+}
+ul{
+    margin-top: 50px;
+    text-align: center;
+    list-style: none;
+    position: relative;
+}
+.Menu{
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    margin: auto 30px;
+}
+.neon1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 0px;
+    color:#39ff14;
+    text-shadow: 0 0 20px #39ff14;
+}
+.category{
+    left: 51%;
+    position: absolute;
+    font-size: 50px;
+    margin:10px auto;
+    transform: translateX(-50%);
+}
+.Menu_neon{
+    height: 10px;
+}
+.neon2{
+    left: 51%;
+    position: absolute;
+    font-size: 0px;
+    margin:10px auto;
+    transform: translateX(-50%);
+    font-weight: bold;
+    text-shadow: 0 0 20px #ff0081;
+    color:#ff0081;
+}
+.Cat_neon:hover .neon2{
+    font-size: 50px;
+}
+.Cat_neon:hover .category a{
+    color: purple;
+}
+.Menu_neon:hover .neon1{
+    font-size: 50px;
+}
+.space{
+    margin: auto;
+    height: 10px;
+    width: 10px;;
+}
+.Cat_neon{
+    margin: auto;
+    height: 10px;
+}

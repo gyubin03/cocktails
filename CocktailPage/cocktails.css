@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Silver";
+    src: url("https://poppyworks.itch.io/silver/download/eyJpZCI6NDA4NzA2LCJleHBpcmVzIjoxNzAxMDk0NDA0fQ%3d%3d.ex2XKa%2f14DpC2zvKaVZSH%2bTo9Zk%3d");
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    font-family: "Silver";
+}
+
+body {
+    height: 100vh;
+    justify-content: center; /*수직방향정렬*/
+    align-items: center;
+    background-image: url('/img/background/Main_background.png');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+#background {
+    background-image: url('/img/background/Main_background.png');
+    width: 100%;
+    height: 100%;
+    background: fixed;
+}
+.container{
+    position: relative;
+}
+.header1{
+    margin: 0;
+    text-align: center;
+    font-weight: 550;
+    font-size: 100px;
+    color: #fc00ff;
+    text-shadow: 0 0 20px #fc00ff;
+    text-decoration: none;
+    z-index: 1;
+}
+.header2{
+    margin: -108px 0 0;
+    margin-left: 2px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 100px;
+    color:#3ef500;
+    animation: color 3s infinite;
+}
+@keyframes color{
+    0%{color:#3ef500;
+    text-shadow: 0 0 10px #3ef500;
+    text-shadow: 0 0 20px white;}
+    50%{color:#00d7ff;
+        text-shadow: 0 0 10px #00d7ff;
+        text-shadow: 0 0 20px white;}
+    100%{color:#3ef500;
+        text-shadow: 0 0 10px #3ef500;
+        text-shadow: 0 0 20px white;}
+}
+.box1 {
+    width: 420px;
+    height: 300px;
+    border: 3px solid #5800ff;
+    margin: 15px;
+    overflow-y: scroll;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2 {
+    position: relative;
+    width: 150px;
+    height: 220px;
+    border: 2px solid #520dd1;
+    margin-top: 47px;
+    display: block;
+    left: 137px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin: 10px;
+    color: white;
+    position: absolute;
+    font-weight:200;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    width: 250px;
+}
+
+.title_neon{
+    text-align: center;
+    font-size: 32px;
+    margin: 10px;
+    color: #7eff00;
+    text-shadow: 0 0 20px white;
+    text-shadow: 0 0 10px #7eff00;
+    position: absolute;
+    font-weight:bold;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+}
+.content {
+    display: block;
+    font-size: 25px;
+    margin: 10px;
+    float: left;
+    color: white;
+    font-weight: 100;
+    top:270px;
+    position: absolute;
+    z-index: 1;
+}
+.neon{
+    bottom:0;
+    display: block;
+    font-size: 25px;
+    margin: 10px;
+    float: left;
+    font-weight: 1000;
+    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 20px #fc00ff;
+    color:#fc00ff;;
+    top: 270px;
+    position: absolute;
+}
+ul {
+    display: inline-block;
+    list-style: none;
+    padding: auto;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+    bottom: 0;
+}
+.box1::-webkit-scrollbar {
+    width: 7px;
+}
+
+.box1::-webkit-scrollbar-thumb {
+    background-color: #0096ff;
+}
+.box1::-webkit-scrollbar-track{
+    background-color: #00d7ff;
+}
